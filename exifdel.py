@@ -14,7 +14,7 @@ for imagename in os.listdir(file_path):
     image_without_exif.putdata(data)
 
     image_without_exif.save("stripped" + "/" + uuid.uuid4().hex + ".jpg")
-    os.remove(file_path + "/" + imagename)
+    # os.remove(file_path + "/" + imagename)
 
     print("[*] File Saved: Exif_Stripped_%s" % (imagename))
 
